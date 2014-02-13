@@ -7,7 +7,7 @@ YOCTO_DIRECTORY="yocto"
 cd ..
 ROOT_DIRECTORY=`pwd`
 NR_CPUS=`grep -c ^processor /proc/cpuinfo`
-DEFAULT_MACHINE="hachiko"
+DEFAULT_MACHINE="hachiko-tiny"
 
 ###########################################################################################################
 # Helper functions
