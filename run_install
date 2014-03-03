@@ -82,6 +82,14 @@ else
     echo "PACKAGE_CLASSES ?= \"package_ipk\"" >> conf/local.conf
 fi
 
+if [ -n "`grep "^DISTRO" conf/local.conf`" ]
+then
+    MATCH_LINE=`grep "^DISTRO" conf/local.conf`
+    sed -i "s|^${MATCH_LINE}|DISTRO ?= \"tiny-linux-uclibc\"|g" conf/local.conf
+else
+    echo "DISTRO ?= \"tiny-linux-uclibc\"" >> conf/local.conf
+fi
+
 ###########################################################################################################
 # conf/bblayers.conf customization
 
