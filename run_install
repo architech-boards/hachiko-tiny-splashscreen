@@ -8,7 +8,7 @@ cd ..
 ROOT_DIRECTORY=`pwd`
 BASEROOT_SDK=${ROOT_DIRECTORY}
 NR_CPUS=`grep -c ^processor /proc/cpuinfo`
-DEFAULT_MACHINE="hachiko-tiny"
+DEFAULT_MACHINE="hachiko"
 WGET_TIMEOUT=5
 
 ###########################################################################################################
