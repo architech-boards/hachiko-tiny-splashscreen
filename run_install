@@ -182,6 +182,8 @@ else
     fi
 fi
 
+[ -f "${ROOT_DIRECTORY}/hachiko-tiny/yocto/meta-hachiko/conf/machine/hachiko64.conf" ] && { rm "${ROOT_DIRECTORY}/hachiko-tiny/yocto/meta-hachiko/conf/machine/hachiko64.conf"; }
+
 ###########################################################################################################
 # Installing cross-toolchain
 
